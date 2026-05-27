@@ -1,7 +1,8 @@
-# SCALPEL: Semantic Cross-modal Alignment via LLM-Powered Encoder Learning
+![](https://capsule-render.vercel.app/api?type=waving&height=220&color=0:D22229,100:2B4FA3&text=SCALPEL:%20Semantic%20Cross-modal%20Alignment%20via%20LLM-Powered%0A%20Encoder%20Learning%20%20%20%20%20%20%20for%20Medical%20Vision-Language%20Representation&reversal=false&fontSize=18&fontAlignY=33&fontColor=FFFFFF&textBg=false)
+# SCALPEL: Semantic Cross-modal Alignment via LLM-Powered Encoder Learning for Medical Vision-Language Representation
 
-Official code repository for **SCALPEL**, a plug-and-play framework for medical vision-language
-representation learning. SCALPEL injects clinical knowledge from medical LLMs into
+Official code repository for **SCALPEL**, a plug-and-play framework for Semantic Cross-modal Alignment via LLM-Powered Encoder Learning for Medical Vision-Language Representation. 
+SCALPEL injects clinical knowledge from medical LLMs into
 cross-modal alignment through three innovations: (1) Clinical Report Contrastive (CRC)
 fine-tuning to convert generative LLMs into bidirectional clinical text encoders,
 (2) asymmetric architecture with offline feature caching for memory-efficient training,
@@ -97,16 +98,6 @@ python scripts/eval/evaluate_vqa.py \
     --model SCALPEL-CXRBERT-DINOv2-L-14 \
     --dataset vqa_rad --data_path /path/to/vqa_rad
 ```
-
-## Model Configurations
-
-| Config | Text Encoder | Vision Encoder | Use Case |
-|--------|-------------|----------------|----------|
-| `SCALPEL-CXRBERT-DINOv2-L-14` | CXR-BERT (110M) | DeiT3-L (304M) | Main results |
-| `SCALPEL-PubMedBERT-DINOv2-B-14` | PubMedBERT (110M) | DINOv2-B/14 (86M) | Lightweight baseline |
-| `SCALPEL-PMCLLaMA-DINOv2-L-14` | PMC-LLaMA-13B + CRC | DeiT3-L (304M) | LLM-scale path |
-| `SCALPEL-PMCLLaMA-DINOv2-L-14-offline` | PMC-LLaMA-13B (offline) | DeiT3-L (304M) | Offline caching mode |
-| `SCALPEL-Quick-DINOv2-B-16` | Random Transformer | DINOv1-B/16 (86M) | Minimal baseline |
 
 ## Repository Structure
 
