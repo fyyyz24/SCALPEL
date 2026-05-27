@@ -1,0 +1,38 @@
+{
+    "embed_dim": 768,
+    "vision_cfg": {
+        "image_size": 224,
+        "patch_size": 14,
+        "layers": 12,
+        "width": 768,
+        "head_width": 64,
+        "mlp_ratio": 4.0,
+        "timm_model_name": "vit_base_patch14_dinov2.lvd142m",
+        "timm_model_pretrained": true,
+        "timm_pool": "token",
+        "timm_proj": "linear",
+        "timm_proj_bias": true,
+        "ls_init_value": null,
+        "patch_dropout": 0.0,
+        "global_average_pool": false,
+        "drop_path_rate": null,
+        "qkv_bias": true,
+        "fusedLN": false,
+        "xattn": false,
+        "postnorm": false,
+        "rope": false,
+        "pt_hw_seq_len": 16,
+        "intp_freq": false,
+        "naiveswiglu": false,
+        "subln": false
+    },
+    "text_cfg": {
+        "hf_model_name": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+        "hf_tokenizer_name": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+        "hf_model_pretrained": true,
+        "proj": "mlp",
+        "pooler_type": "mean_pooler",
+        "context_length": 512
+    },
+    "custom_text": true
+}

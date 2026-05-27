@@ -1,0 +1,39 @@
+{
+    "embed_dim": 512,
+    "vision_cfg": {
+        "image_size": 224,
+        "patch_size": 16,
+        "layers": 12,
+        "width": 768,
+        "head_width": 64,
+        "mlp_ratio": 4.0,
+        "timm_model_name": "vit_base_patch16_224.dino",
+        "timm_model_pretrained": true,
+        "timm_pool": "token",
+        "timm_proj": "linear",
+        "timm_proj_bias": true,
+        "ls_init_value": null,
+        "patch_dropout": 0.0,
+        "global_average_pool": false,
+        "drop_path_rate": null,
+        "qkv_bias": true,
+        "fusedLN": false,
+        "xattn": false,
+        "postnorm": false,
+        "rope": false,
+        "pt_hw_seq_len": 16,
+        "intp_freq": false,
+        "naiveswiglu": false,
+        "subln": false
+    },
+    "text_cfg": {
+        "use_embedding": false,
+        "llm_embedding_dim": 0,
+        "context_length": 256,
+        "vocab_size": 49408,
+        "width": 512,
+        "heads": 8,
+        "layers": 12
+    },
+    "custom_text": true
+}

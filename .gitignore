@@ -1,0 +1,36 @@
+# Model checkpoints
+*.pt
+*.pth
+*.bin
+*.safetensors
+checkpoints/
+
+# Data
+data/
+*.tar
+*.zip
+
+# Logs
+logs/
+wandb/
+*.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.eggs/
+*.egg-info/
+dist/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+*.env
