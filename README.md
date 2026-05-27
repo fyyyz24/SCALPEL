@@ -1,4 +1,4 @@
-![](https://capsule-render.vercel.app/api?type=waving&height=240&color=0:D22229,100:2B4FA3&section=header&text=SCALPEL:%20Semantic%20Cross-modal%20Alignment%20via%20LLM-Powered&desc=Encoder%20Learning%20for%20Medical%20Vision-Language%20Representation&fontSize=16&descSize=16&fontColor=FFFFFF&fontAlignY=36&descAlignY=58&animation=fadeIn&textBg=false)
+![](https://capsule-render.vercel.app/api?type=waving&height=260&color=0:D22229,100:2B4FA3&section=header&text=SCALPEL:%20Semantic%20Cross-modal%20Alignment%20via%20LLM-Powered&desc=Encoder%20Learning%20for%20Medical%20Vision-Language%20Representation&fontSize=22&descSize=22&fontColor=FFFFFF&fontAlignY=38&descAlignY=62&animation=fadeIn&textBg=false&fontWeight=700)
 # SCALPEL: Semantic Cross-modal Alignment via LLM-Powered Encoder Learning for Medical Vision-Language Representation
 
 Official code repository for **SCALPEL**, a plug-and-play framework for Semantic Cross-modal Alignment via LLM-Powered Encoder Learning for Medical Vision-Language Representation. 
