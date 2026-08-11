@@ -1,7 +1,7 @@
-![](https://capsule-render.vercel.app/api?type=waving&height=260&color=0:D22229,100:2B4FA3&section=header&text=SCALPEL:%20Semantic%20Cross-modal%20Alignment%20via%20LLM-Powered&desc=Encoder%20Learning%20for%20Medical%20Vision-Language%20Representation&fontSize=22&descSize=22&fontColor=FFFFFF&fontAlignY=38&descAlignY=62&animation=fadeIn&textBg=false&fontWeight=700)
-# SCALPEL: Semantic Cross-modal Alignment via LLM-Powered Encoder Learning for Medical Vision-Language Representation
+![](https://capsule-render.vercel.app/api?type=waving&height=260&color=0:D22229,100:2B4FA3&section=header&text=SCALPEL:%20Semantic%20Cross-modal%20Alignment%20via%20LLM-Powered&desc=Encoder%20Learning%20for%20Medical%20Vision-Language%20Representation&fontSize=22&descSize=22&fontColor=FFFFFF&fontAlignY=38&descAlignY=62&animation=fadeIn&textBg=false&fontWeight=700&desc=Yunzhan%20Fu,%20Enyu%20Bao,%20Xiangyu%20Shen,%20Yihao%20Wu,%20Chunbo%20Jiang,%20Fangli%20Guan,%20and%20Liqi%20Yan&descSize=12&descAlignY=78)
+# SCALPEL: Semantic Cross-modal Alignment via LLM-Powered Encoder Learning for Medical Vision-Language Representation 
 
-Official code repository for **SCALPEL**, a plug-and-play framework for Semantic Cross-modal Alignment via LLM-Powered Encoder Learning for Medical Vision-Language Representation. 
+This is pytorch official code repository for our paper **SCALPEL**, a plug-and-play framework for Semantic Cross-modal Alignment via LLM-Powered Encoder Learning for Medical Vision-Language Representation. accepted by [PRCV 2026](https://www.prcv.cn/web/#/home) [[🎩 arXiv]](https://arxiv.org/abs/2607.26885)
 SCALPEL injects clinical knowledge from medical LLMs into
 cross-modal alignment through three innovations: (1) Clinical Report Contrastive (CRC)
 fine-tuning to convert generative LLMs into bidirectional clinical text encoders,
@@ -103,24 +103,24 @@ python scripts/eval/evaluate_vqa.py \
 
 ```
 llm2clip/
-├── eva_clip/          # Core model: CustomCLIP, ANAO loss, HF/TiMM adapters
-│   ├── anao_loss.py   # Anatomy-Negation Aware Objective
-│   ├── hf_model.py    # HuggingFace text encoder wrapper
-│   ├── model.py       # CLIP / CustomCLIP / TextProj
-│   └── model_configs/ # Pre-defined architecture configurations
-├── training/          # Training pipeline, data loading, distributed utils
-├── data/              # Medical NER, metadata extraction, data preparation
-└── llm2vec/           # LLM bidirectional conversion (LLM2Vec integration)
+├── eva_clip/          
+│   ├── anao_loss.py   
+│   ├── hf_model.py    
+│   ├── model.py       
+│   └── model_configs/ 
+├── training/          
+├── data/              
+└── llm2vec/           
 llm_caption_contrastive/
-├── run_mntp.py        # CRC fine-tuning via MNTP
-└── run_supervised.py  # Supervised contrastive fine-tuning (SimCSE)
+├── run_mntp.py        
+└── run_supervised.py  
 scripts/
-├── crc_simple.py      # Lightweight CRC training loop
-├── extract_llm_features.py  # Offline LLM feature extraction
-├── train_scalpel.sh   # Full training pipeline
-├── data/              # Dataset download and preparation
-├── eval/              # Retrieval, classification, VQA evaluation
-└── measure_efficiency.py    # Params / FLOPs measurement
+├── crc_simple.py   
+├── extract_llm_features.py  
+├── train_scalpel.sh   
+├── data/              
+├── eval/              
+└── measure_efficiency.py    
 ```
 
 
