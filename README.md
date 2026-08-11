@@ -2,12 +2,6 @@
 # SCALPEL: Semantic Cross-modal Alignment via LLM-Powered Encoder Learning for Medical Vision-Language Representation 
 
 This is pytorch official code repository for our paper **SCALPEL**, a plug-and-play framework for Semantic Cross-modal Alignment via LLM-Powered Encoder Learning for Medical Vision-Language Representation. accepted by [PRCV 2026](https://www.prcv.cn/web/#/home) [[🎩 arXiv]](https://arxiv.org/abs/2607.26885)
-SCALPEL injects clinical knowledge from medical LLMs into
-cross-modal alignment through three innovations: (1) Clinical Report Contrastive (CRC)
-fine-tuning to convert generative LLMs into bidirectional clinical text encoders,
-(2) asymmetric architecture with offline feature caching for memory-efficient training,
-and (3) Anatomy-Negation Aware Objective (ANAO) that explicitly penalizes anatomical
-laterality confusion and clinical negation blindness.
 
 ## Installation
 
